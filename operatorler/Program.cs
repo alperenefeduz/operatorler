@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -76,16 +77,66 @@ namespace operatorler
 
             #region Karşılaştırma Operatöleri
 
-            //Karşılaştırma operatörleri her zaman boolean veri döndürür.
-            int sayi = 22;
+            ////Karşılaştırma operatörleri her zaman boolean veri döndürür.
+            //int sayi = 22;
 
 
-            Console.Write("sayı 10 dan büyük mü = ");
-            Console.WriteLine(sayi > 10);
-            Console.Write("sayı 10 dan küçük mü = ");
-            Console.WriteLine(sayi < 10);
+            //Console.Write("sayı 10 dan büyük mü = ");
+            //Console.WriteLine(sayi > 10);
+            //Console.Write("sayı 10 dan küçük mü = ");
+            //Console.WriteLine(sayi < 10);
+            //Console.Write("sayı 10 a eşit mi = ");
+            //Console.WriteLine(sayi == 10);
+            //Console.Write("sayı 10 a büyük eşit mi = ");
+            //Console.WriteLine(sayi >= 10);
+            //Console.Write("sayı 10 a küçük eşit mi = ");
+            //Console.WriteLine(sayi <= 10);
+            //Console.Write("sayı 10 a eşit değil mi = ");
+            //Console.WriteLine(sayi != 10); //Eşit değil ise true getirir
+
+            ////! her zaman başa yazılır
+            //Console.WriteLine(!true);
+            //Console.Write("sayı 10 dqn büyük değil mi");
+            //Console.WriteLine(!(sayi > 10));
 
             #endregion
+
+            #region Mantıksal Operatörler
+
+            // manrıksal operatörler ve veya komutlarına ihtiyaç duyduğumuzda kullanılır 
+            //genellikle karşılaştırma operatörleri ile birlikte kullanılır. 
+            //boolean veri türleri ile koşulları çoğaltmak veya aynı koşula birden çok değişken eklemek için tercih edilir 
+            //mantıksal operatörlerin sağında ve solunda boolean veri olmalıdır
+            //&& vea anlamında kullanılan mantıksal işelemler
+
+            //true  && true  = true 
+            //true  && false = false 
+            //false && true  = false
+            //false && false = false
+
+            // || veya anlamında kullaılan 
+            //true  || true  = true 
+            //true  || false = true 
+            //false || true  = true
+            //false || false = false
+
+            int sayi = 15;
+
+            //sayı değişkeni içindeki veri 10 ile 20 arasında mı?
+            Console.Write("sayı = ");
+            Console.WriteLine(sayi);
+            Console.Write("10 dan büyük mü = ");
+            Console.WriteLine(sayi > 10);
+            Console.Write("20 dan küçük mü = ");
+            Console.WriteLine(sayi < 20);
+
+            Console.Write("satı 10 ile 20 arasında mı = ");
+            Console.WriteLine(sayi > 10 );
+            #endregion
+
+
         }
+
+
     }
 }
